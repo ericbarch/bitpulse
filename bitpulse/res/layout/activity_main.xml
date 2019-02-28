@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayout"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    tools:context=".MainActivity" >
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:contentDescription="@string/logo_desc"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.25"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/bitpulse_logo_blur" />
+    
+    <TextView
+	    android:layout_width="wrap_content"
+	    android:text="@string/loading_bid"
+	    android:layout_marginLeft="4dp"
+	    android:id="@+id/bid"
+	    android:textColor="#ff55ff55"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_height="wrap_content"
+	    android:textSize="28sp" >
+	</TextView>
+    
+    <TextView
+	    android:layout_width="wrap_content"
+	    android:text="@string/loading_ask"
+	    android:id="@+id/ask"
+	    android:textColor="#ffff5555"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="4dp"
+	    android:layout_alignParentRight="true"
+	    android:layout_height="wrap_content"
+	    android:textSize="28sp" >
+	</TextView>
+	
+    <TextView
+        android:id="@+id/last"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:layout_centerVertical="true"
+	    android:textColor="#FFffffff" >
+	</TextView>
+    
+    <TextView
+	    android:layout_width="wrap_content"
+	    android:text="@string/loading_vol"
+	    android:id="@+id/volume"
+	    android:layout_marginLeft="4dp"
+	    android:textColor="#ff888888"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_height="wrap_content"
+	    android:textSize="20sp" >
+	</TextView>
+	
+    <TextView
+	    android:layout_width="wrap_content"
+	    android:text="@string/dots"
+	    android:id="@+id/lastChange"
+	    android:textColor="#ffaaaaaa"
+	    android:layout_alignParentBottom="true"
+	    android:layout_centerHorizontal="true"
+	    android:layout_height="wrap_content"
+	    android:textSize="14sp" >
+	</TextView>
+	
+     <TextView
+	    android:layout_width="wrap_content"
+	    android:text="@string/last_change"
+	    android:id="@+id/lastChangeLabel"
+	    android:textColor="#ffaaaaaa"
+	    android:layout_above="@id/lastChange"
+	    android:layout_centerHorizontal="true"
+	    android:layout_height="wrap_content"
+	    android:textSize="14sp" >
+	</TextView>
+    
+    <TextView
+	    android:layout_width="wrap_content"
+	    android:text="@string/disconnected"
+	    android:layout_marginRight="4dp"
+	    android:id="@+id/connection"
+	    android:textColor="#ff888888"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_height="wrap_content"
+	    android:textSize="20sp" >
+	</TextView>
+
+</RelativeLayout>
